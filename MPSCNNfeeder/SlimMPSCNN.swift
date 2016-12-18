@@ -67,7 +67,9 @@ class SlimMPSCNNConvolution: MPSCNNConvolution{
     let wtPathTmp = tmpPath.appendingPathComponent("weights_" + kernelParamsBinaryName).appendingPathExtension("dat")
     let bsPathTmp = tmpPath.appendingPathComponent("bias_" + kernelParamsBinaryName).appendingPathExtension("dat")
 
-    if fileManager.fileExists(atPath:wtPathBundle!) && fileManager.fileExists(atPath:bsPathBundle!) {
+//    if fileManager.fileExists(atPath:wtPathBundle!) && fileManager.fileExists(atPath:bsPathBundle!) {
+    if (wtPathBundle != nil) && (bsPathBundle != nil) {
+
       // Use parameters in Bundle
       wtPath = wtPathBundle
       bsPath = bsPathBundle

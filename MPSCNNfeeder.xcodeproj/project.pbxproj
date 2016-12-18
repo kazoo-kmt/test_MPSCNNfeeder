@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		144C5ECF040C0EF398F6DEB0 /* Pods_MPSCNNfeeder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E140479FF02E6C7C967953 /* Pods_MPSCNNfeeder.framework */; };
 		C923C9491E04DE68009D4BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C9481E04DE68009D4BA8 /* AppDelegate.swift */; };
-		C923C94B1E04DE68009D4BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C94A1E04DE68009D4BA8 /* ViewController.swift */; };
-		C923C94E1E04DE68009D4BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C923C94C1E04DE68009D4BA8 /* Main.storyboard */; };
 		C923C9501E04DE68009D4BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C923C94F1E04DE68009D4BA8 /* Assets.xcassets */; };
 		C923C9531E04DE68009D4BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C923C9511E04DE68009D4BA8 /* LaunchScreen.storyboard */; };
-		C9C8C3AE1E0606D10006345B /* mnist_model_weights.h5 in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3AB1E0606D10006345B /* mnist_model_weights.h5 */; };
 		C9C8C3AF1E0606D10006345B /* MNISTDeepCNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3AC1E0606D10006345B /* MNISTDeepCNN.swift */; };
 		C9C8C3B01E0606D10006345B /* SlimMPSCNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3AD1E0606D10006345B /* SlimMPSCNN.swift */; };
 		C9C8C3B61E0664030006345B /* swapaxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3B51E0664030006345B /* swapaxes.swift */; };
+		C9C8C3B91E067B7D0006345B /* MetalCNNBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3B71E067B7D0006345B /* MetalCNNBasicViewController.swift */; };
+		C9C8C3BA1E067B7D0006345B /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3B81E067B7D0006345B /* UIViewController+alert.swift */; };
+		C9C8C3BD1E067B870006345B /* MetalCNNBasic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3BB1E067B870006345B /* MetalCNNBasic.storyboard */; };
+		C9C8C3BF1E067BB80006345B /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3BE1E067BB80006345B /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,16 +26,17 @@
 		8A292D502441A9ED1F91AE12 /* Pods-MPSCNNfeeder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPSCNNfeeder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPSCNNfeeder/Pods-MPSCNNfeeder.debug.xcconfig"; sourceTree = "<group>"; };
 		C923C9451E04DE68009D4BA8 /* MPSCNNfeeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPSCNNfeeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C923C9481E04DE68009D4BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C923C94A1E04DE68009D4BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C923C94D1E04DE68009D4BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C923C94F1E04DE68009D4BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C923C9521E04DE68009D4BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C923C9541E04DE68009D4BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9C8C3AB1E0606D10006345B /* mnist_model_weights.h5 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mnist_model_weights.h5; sourceTree = "<group>"; };
 		C9C8C3AC1E0606D10006345B /* MNISTDeepCNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNISTDeepCNN.swift; sourceTree = "<group>"; };
 		C9C8C3AD1E0606D10006345B /* SlimMPSCNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimMPSCNN.swift; sourceTree = "<group>"; };
 		C9C8C3B11E060B990006345B /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
 		C9C8C3B51E0664030006345B /* swapaxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swapaxes.swift; sourceTree = "<group>"; };
+		C9C8C3B71E067B7D0006345B /* MetalCNNBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCNNBasicViewController.swift; sourceTree = "<group>"; };
+		C9C8C3B81E067B7D0006345B /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		C9C8C3BC1E067B870006345B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MetalCNNBasic.storyboard; sourceTree = "<group>"; };
+		C9C8C3BE1E067BB80006345B /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +93,12 @@
 				C9C8C3AC1E0606D10006345B /* MNISTDeepCNN.swift */,
 				C9C8C3AD1E0606D10006345B /* SlimMPSCNN.swift */,
 				C9C8C3B51E0664030006345B /* swapaxes.swift */,
-				C9C8C3AB1E0606D10006345B /* mnist_model_weights.h5 */,
+				C9C8C3B71E067B7D0006345B /* MetalCNNBasicViewController.swift */,
+				C9C8C3BE1E067BB80006345B /* DrawView.swift */,
+				C9C8C3B81E067B7D0006345B /* UIViewController+alert.swift */,
 				C923C9481E04DE68009D4BA8 /* AppDelegate.swift */,
-				C923C94A1E04DE68009D4BA8 /* ViewController.swift */,
-				C923C94C1E04DE68009D4BA8 /* Main.storyboard */,
 				C923C94F1E04DE68009D4BA8 /* Assets.xcassets */,
+				C9C8C3BB1E067B870006345B /* MetalCNNBasic.storyboard */,
 				C923C9511E04DE68009D4BA8 /* LaunchScreen.storyboard */,
 				C923C9541E04DE68009D4BA8 /* Info.plist */,
 			);
@@ -167,8 +170,7 @@
 			files = (
 				C923C9531E04DE68009D4BA8 /* LaunchScreen.storyboard in Resources */,
 				C923C9501E04DE68009D4BA8 /* Assets.xcassets in Resources */,
-				C9C8C3AE1E0606D10006345B /* mnist_model_weights.h5 in Resources */,
-				C923C94E1E04DE68009D4BA8 /* Main.storyboard in Resources */,
+				C9C8C3BD1E067B870006345B /* MetalCNNBasic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C8C3AF1E0606D10006345B /* MNISTDeepCNN.swift in Sources */,
-				C923C94B1E04DE68009D4BA8 /* ViewController.swift in Sources */,
+				C9C8C3B91E067B7D0006345B /* MetalCNNBasicViewController.swift in Sources */,
+				C9C8C3BF1E067BB80006345B /* DrawView.swift in Sources */,
+				C9C8C3BA1E067B7D0006345B /* UIViewController+alert.swift in Sources */,
 				C923C9491E04DE68009D4BA8 /* AppDelegate.swift in Sources */,
 				C9C8C3B01E0606D10006345B /* SlimMPSCNN.swift in Sources */,
 				C9C8C3B61E0664030006345B /* swapaxes.swift in Sources */,
@@ -238,20 +242,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C923C94C1E04DE68009D4BA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C923C94D1E04DE68009D4BA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C923C9511E04DE68009D4BA8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C923C9521E04DE68009D4BA8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C8C3BB1E067B870006345B /* MetalCNNBasic.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C8C3BC1E067B870006345B /* Base */,
+			);
+			name = MetalCNNBasic.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
