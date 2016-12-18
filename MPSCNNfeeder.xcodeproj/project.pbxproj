@@ -18,6 +18,14 @@
 		C9C8C3BA1E067B7D0006345B /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3B81E067B7D0006345B /* UIViewController+alert.swift */; };
 		C9C8C3BD1E067B870006345B /* MetalCNNBasic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3BB1E067B870006345B /* MetalCNNBasic.storyboard */; };
 		C9C8C3BF1E067BB80006345B /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8C3BE1E067BB80006345B /* DrawView.swift */; };
+		C9C8C3C91E070C0C0006345B /* bias_conv1.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C11E070C0C0006345B /* bias_conv1.dat */; };
+		C9C8C3CA1E070C0C0006345B /* bias_conv2.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C21E070C0C0006345B /* bias_conv2.dat */; };
+		C9C8C3CB1E070C0C0006345B /* bias_fc1.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C31E070C0C0006345B /* bias_fc1.dat */; };
+		C9C8C3CC1E070C0C0006345B /* bias_fc2.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C41E070C0C0006345B /* bias_fc2.dat */; };
+		C9C8C3CD1E070C0C0006345B /* weights_conv1.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C51E070C0C0006345B /* weights_conv1.dat */; };
+		C9C8C3CE1E070C0C0006345B /* weights_conv2.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C61E070C0C0006345B /* weights_conv2.dat */; };
+		C9C8C3CF1E070C0C0006345B /* weights_fc1.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C71E070C0C0006345B /* weights_fc1.dat */; };
+		C9C8C3D01E070C0C0006345B /* weights_fc2.dat in Resources */ = {isa = PBXBuildFile; fileRef = C9C8C3C81E070C0C0006345B /* weights_fc2.dat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,14 @@
 		C9C8C3B81E067B7D0006345B /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		C9C8C3BC1E067B870006345B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MetalCNNBasic.storyboard; sourceTree = "<group>"; };
 		C9C8C3BE1E067BB80006345B /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		C9C8C3C11E070C0C0006345B /* bias_conv1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bias_conv1.dat; sourceTree = "<group>"; };
+		C9C8C3C21E070C0C0006345B /* bias_conv2.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bias_conv2.dat; sourceTree = "<group>"; };
+		C9C8C3C31E070C0C0006345B /* bias_fc1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bias_fc1.dat; sourceTree = "<group>"; };
+		C9C8C3C41E070C0C0006345B /* bias_fc2.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bias_fc2.dat; sourceTree = "<group>"; };
+		C9C8C3C51E070C0C0006345B /* weights_conv1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = weights_conv1.dat; sourceTree = "<group>"; };
+		C9C8C3C61E070C0C0006345B /* weights_conv2.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = weights_conv2.dat; sourceTree = "<group>"; };
+		C9C8C3C71E070C0C0006345B /* weights_fc1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = weights_fc1.dat; sourceTree = "<group>"; };
+		C9C8C3C81E070C0C0006345B /* weights_fc2.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = weights_fc2.dat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,7 @@
 		C923C9471E04DE68009D4BA8 /* MPSCNNfeeder */ = {
 			isa = PBXGroup;
 			children = (
+				C9C8C3C01E070C0C0006345B /* parameters */,
 				C9C8C3AC1E0606D10006345B /* MNISTDeepCNN.swift */,
 				C9C8C3AD1E0606D10006345B /* SlimMPSCNN.swift */,
 				C9C8C3B51E0664030006345B /* swapaxes.swift */,
@@ -103,6 +120,21 @@
 				C923C9541E04DE68009D4BA8 /* Info.plist */,
 			);
 			path = MPSCNNfeeder;
+			sourceTree = "<group>";
+		};
+		C9C8C3C01E070C0C0006345B /* parameters */ = {
+			isa = PBXGroup;
+			children = (
+				C9C8C3C11E070C0C0006345B /* bias_conv1.dat */,
+				C9C8C3C21E070C0C0006345B /* bias_conv2.dat */,
+				C9C8C3C31E070C0C0006345B /* bias_fc1.dat */,
+				C9C8C3C41E070C0C0006345B /* bias_fc2.dat */,
+				C9C8C3C51E070C0C0006345B /* weights_conv1.dat */,
+				C9C8C3C61E070C0C0006345B /* weights_conv2.dat */,
+				C9C8C3C71E070C0C0006345B /* weights_fc1.dat */,
+				C9C8C3C81E070C0C0006345B /* weights_fc2.dat */,
+			);
+			path = parameters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C923C9531E04DE68009D4BA8 /* LaunchScreen.storyboard in Resources */,
+				C9C8C3CD1E070C0C0006345B /* weights_conv1.dat in Resources */,
 				C923C9501E04DE68009D4BA8 /* Assets.xcassets in Resources */,
+				C9C8C3CA1E070C0C0006345B /* bias_conv2.dat in Resources */,
+				C9C8C3C91E070C0C0006345B /* bias_conv1.dat in Resources */,
+				C9C8C3D01E070C0C0006345B /* weights_fc2.dat in Resources */,
 				C9C8C3BD1E067B870006345B /* MetalCNNBasic.storyboard in Resources */,
+				C9C8C3CE1E070C0C0006345B /* weights_conv2.dat in Resources */,
+				C9C8C3CB1E070C0C0006345B /* bias_fc1.dat in Resources */,
+				C9C8C3CF1E070C0C0006345B /* weights_fc1.dat in Resources */,
+				C9C8C3CC1E070C0C0006345B /* bias_fc2.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
